@@ -31,3 +31,5 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     </html>
   );
 }
+
+// git pull origin master --no-edit
