@@ -10,7 +10,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en">
       <body>
-        <header className="fixed w-full px-20 py-10 z-10 text-[white] flex bg-transparent items-center justify-between">
+        <header className="fixed w-full px-20 py-10 z-10 bg-[blue] text-[white] flex items-center justify-between">
           <Link href="/">
             <Image src={Logo} alt="Logo image" width={60} height={50} />
           </Link>
