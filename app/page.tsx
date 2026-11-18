@@ -58,8 +58,6 @@ export default function Home() {
         </div>
       </div>
       <div className="z-10  relative">
-        dssssssss dssssssssds
-        <br />
       </div>
     </div>
   );
