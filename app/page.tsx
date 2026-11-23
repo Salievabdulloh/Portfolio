@@ -72,7 +72,7 @@ export default function Home() {
             varius finibus. Sed ornare sit amet lorem <br /> sed viverra. In vel
             urna quis libero viverra facilisis ut ac est.
           </h3>
-          <button className="border-x-2 border-y-2 border-x-black border-y-transparent hover:border-y-black font-semibold px-6 py-2 cursor-pointer transition-all duration-300">
+          <button className="border-x-2 mb-[1000px] border-y-2 border-x-black border-y-transparent hover:border-y-black font-semibold px-6 py-2 cursor-pointer transition-all duration-300">
             Explore
           </button>
           <Image src={Sep} alt="This is seperator lines" />
