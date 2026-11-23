@@ -43,8 +43,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <footer className="bg-[#1A1A1A] py-[50px] gap-5 text-[white] flex flex-col items-center">
           <button
             onClick={scrollToTop}
-            className="flex cursor-pointer items-center flex-col gap-3"
-          >
+            className="flex cursor-pointer items-center flex-col gap-3">
             <Image src={Top} alt="back to top icon" />
             <h3>BACK TO TOP</h3>
           </button>
