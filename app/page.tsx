@@ -6,6 +6,7 @@ import At from "/public/at.png";
 import Git from "/public/git.png";
 import LK from "/public/In.png";
 import ITB from "/public/Logo ITB.png";
+import Sep from "/public/separator.png";
 
 export default function Home() {
   return (
@@ -44,34 +45,37 @@ export default function Home() {
         <div className="absolute right-0 top-0 bottom-0">
           <Image src={ITB} alt="This is Logo of ITB" />
         </div>
-        <div className="flex flex-col gap-5 items-start">
+        <div className="flex md:w-210 flex-col gap-5 items-start">
           <h1 className="text-[29px] font-bold ">IT BERRIES</h1>
           <h3>
             Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem
             varius finibus. Sed ornare sit amet lorem sed viverra. In vel urna
-            quis libero viverra facilisis ut ac <br /> est. Morbi commodo, eros
-            in dignissim tempus, lacus odio rutrum augue, in semper sem magna
-            quis tellus. Etiam enim erat, suscipit eu semper a, dictum sit amet{" "}
-            <br />
-            elit. Nunc egestas nisi eget enim gravida facilisis. Pellentesque
-            laoreet varius turpis vel pharetra. Ut ante justo, consequat vitae
-            elementum tempor, accumsan nec <br /> eros.
+            quis libero viverra facilisis ut ac est. Morbi commodo, eros in
+            dignissim tempus, lacus odio rutrum augue, in semper sem magna quis
+            tellus. Etiam enim erat, suscipit eu semper a, dictum sit amet elit.
+            Nunc egestas nisi eget enim gravida facilisis. Pellentesque laoreet
+            varius turpis vel pharetra. Ut ante justo, consequat vitae elementum
+            tempor, accumsan nec eros.
           </h3>
-          <button className="border-x-2 border-y-2 border-x-white border-y-transparent hover:border-y-white font-semibold px-6 py-3 cursor-pointer transition-all duration-300">
+          <button className="border-x-2 border-y-2 border-x-white border-y-transparent hover:border-y-white font-semibold px-6 py-2 cursor-pointer transition-all duration-300">
             READ MORE
           </button>
         </div>
       </section>
-      <section className="z-10 flex items-center flex-col px-20 py-7 bg-[#fafafa] relative">
+      <section className="z-10 flex items-center flex-col px-20 py-7 bg-[#D3D3D3] relative">
         <div className="flex items-center flex-col gap-10">
-          <button className="border-8 px-10 font-bold text-2xl py-5">
-            ABOUT ME
+          <button className="border-6 cursor-pointer px-15 font-bold text-2xl py-5">
+            A B O U T &nbsp;&nbsp; M E
           </button>
           <h3 className="text-center">
             Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem
             varius finibus. Sed ornare sit amet lorem <br /> sed viverra. In vel
             urna quis libero viverra facilisis ut ac est.
           </h3>
+          <button className="border-x-2 border-y-2 border-x-black border-y-transparent hover:border-y-black font-semibold px-6 py-2 cursor-pointer transition-all duration-300">
+            Explore
+          </button>
+          <Image src={Sep} alt="This is seperator lines" />
         </div>
       </section>
     </div>
