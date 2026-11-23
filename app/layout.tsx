@@ -2,15 +2,20 @@
 import Image from "next/image";
 import "./globals.css";
 import Link from "next/link";
-import Logo from "/public/logo.png";
 import { useRouter } from "next/navigation";
+import Logo from "/public/logo.png";
+import Top from "/public/Top.svg";
+import Instagram from "/public/instagram.svg";
+import LinkedIn from "/public/LinkedIn.svg";
+import Gmail from "/public/gmail.svg";
+import Facebook from "/public/facebook.svg";
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   const route = useRouter();
   return (
     <html lang="en">
       <body>
-        <header className="fixed w-full px-20 py-10 z-10 text-[white] flex bg-transparent items-center justify-between">
+        <header className="fixed w-full px-20 py-10 z-10 bg-transparent text-[white] flex items-center justify-between">
           <Link href="/">
             <Image src={Logo} alt="Logo image" width={60} height={50} />
           </Link>
@@ -27,10 +32,18 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           </ul>
         </header>
         {children}
+        <footer className="bg-[#1A1A1A] py-[50px] gap-5 text-[white] flex flex-col items-center">
+          <Image src={Top} alt="back to top icon" />
+          <div className="">BACK TO TOP</div>
+          <div className="flex items-center gap-5 ">
+            <Image src={Facebook} alt="this is facebook icon" />
+            <Image src={LinkedIn} alt="this is LinkedIn icon" />
+            <Image src={Instagram} alt="this is instagram icon" />
+            <Image src={Gmail} alt="this is gmail icon" />
+          </div>
+          <h3>@2026 Saliev Abdulloh All Rights Reserved.</h3>
+        </footer>
       </body>
     </html>
   );
 }
-
-
-
