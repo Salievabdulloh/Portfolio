@@ -76,6 +76,8 @@ export default function Home() {
             Explore
           </button>
           <Image src={Sep} alt="This is seperator lines" />
+          <Image src={Sep} alt="This is seperator lines" />
+          <Image src={Sep} alt="This is seperator lines" />
         </div>
       </section>
     </div>
