@@ -131,6 +131,7 @@ export default function Home() {
             <Image src={Sep} alt="This is seperator lines" />
             <button className="border-6 mt-10 cursor-pointer px-15 font-bold text-2xl py-5">
               S K I L L S
+              
             </button>
           </div>
           <div className="">
@@ -141,4 +142,3 @@ export default function Home() {
     </div>
   );
 }
-
