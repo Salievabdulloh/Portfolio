@@ -7,6 +7,9 @@ import Git from "/public/git.png";
 import LK from "/public/In.png";
 import ITB from "/public/Logo ITB.png";
 import Sep from "/public/separator.png";
+import Design from "/public/design.png";
+import Tool from "/public/tool.png";
+import Maintance from "/public/maintance.png";
 
 export default function Home() {
   return (
@@ -62,20 +65,65 @@ export default function Home() {
           </button>
         </div>
       </section>
-      <section className="z-10 flex items-center flex-col px-20 py-7 bg-[#D3D3D3] relative">
-        <div className="flex items-center flex-col gap-10">
-          <button className="border-6 cursor-pointer px-15 font-bold text-2xl py-5">
-            A B O U T &nbsp;&nbsp; M E
-          </button>
-          <h3 className="text-center">
-            Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem
-            varius finibus. Sed ornare sit amet lorem <br /> sed viverra. In vel
-            urna quis libero viverra facilisis ut ac est.
-          </h3>
-          <button className="border-x-2 border-y-2 border-x-black border-y-transparent hover:border-y-black font-semibold px-6 py-2 cursor-pointer transition-all duration-300">
-            Explore
-          </button>
+      <section className="bg-[#D3D3D3] flex items-center flex-col px-20 py-7 relative">
+        <div className="z-10 px-20 py-7">
+          <div className="flex items-center flex-col gap-10">
+            <button className="border-6 cursor-pointer px-15 font-bold text-2xl py-5">
+              A B O U T &nbsp;&nbsp; M E
+            </button>
+            <h3 className="text-center">
+              Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem
+              varius finibus. Sed ornare sit amet lorem <br /> sed viverra. In
+              vel urna quis libero viverra facilisis ut ac est.
+            </h3>
+            <button className="border-x-2 border-y-2 border-x-black border-y-transparent hover:border-y-black font-semibold px-6 py-2 cursor-pointer transition-all duration-300">
+              Explore
+            </button>
+            <Image src={Sep} alt="This is seperator lines" />
+          </div>
+        </div>
+        <div className="z-10 my-10 items-center flex-col px-20 py-7">
+          <div className="flex items-center gap-10">
+            <div>
+              <div className="flex items-center">
+                <Image src={Design} alt="this is an image of a pens" />
+                <h2 className="text-[18px] font-bold">D E S I G N</h2>
+              </div>
+              <h3 className="text-center md:w-120">
+                I can design the site based on your needs and suggestions. I can
+                also design the site from scratch and consult you during the
+                job.
+              </h3>
+            </div>
+            <div>
+              <div className="flex items-center">
+                <Image src={Tool} alt="this is an image of a pens" />
+                <h2 className="text-[18px] font-bold">D E S I G N</h2>
+              </div>
+              <h3 className="text-center md:w-120">
+                I can design the site based on your needs and suggestions. I can
+                also design the site from scratch and consult you during the
+                job.
+              </h3>
+            </div>
+          </div>
+          <div className="my-10">
+            <div className="flex items-center">
+              <Image src={Maintance} alt="this is an image of a pens" />
+              <h2 className="text-[18px] font-bold">M A I N T A N C E</h2>
+            </div>
+            <h3 className="text-center md:w-120">
+              I can design the site based on your needs and suggestions. I can
+              also design the site from scratch and consult you during the job.
+            </h3>
+          </div>
           <Image src={Sep} alt="This is seperator lines" />
+          <button className="border-6 mt-10 cursor-pointer px-15 font-bold text-2xl py-5">
+            S K I L L S
+          </button>
+        </div>
+        <div className="">
+          <h2 className="font-bold">USING NOW:</h2>
         </div>
       </section>
     </div>
