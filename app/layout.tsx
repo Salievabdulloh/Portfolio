@@ -12,6 +12,14 @@ import Facebook from "/public/facebook.svg";
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   const route = useRouter();
+
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }
+
   return (
     <html lang="en">
       <body>
@@ -33,8 +41,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         </header>
         {children}
         <footer className="bg-[#1A1A1A] py-[50px] gap-5 text-[white] flex flex-col items-center">
-          <Image src={Top} alt="back to top icon" />
-          <div className="">BACK TO TOP</div>
+          <button
+            onClick={scrollToTop}
+            className="flex cursor-pointer items-center flex-col gap-3">
+            <Image src={Top} alt="back to top icon" />
+            <h3>BACK TO TOP</h3>
+          </button>
           <div className="flex items-center gap-5 ">
             <Image src={Facebook} alt="this is facebook icon" />
             <Image src={LinkedIn} alt="this is LinkedIn icon" />
@@ -47,3 +59,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     </html>
   );
 }
+
+
+
+
+
+
+

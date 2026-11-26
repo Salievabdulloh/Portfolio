@@ -117,14 +117,26 @@ export default function Home() {
               also design the site from scratch and consult you during the job.
             </h3>
           </div>
-          <Image src={Sep} alt="This is seperator lines" />
-          <button className="border-6 mt-10 cursor-pointer px-15 font-bold text-2xl py-5">
-            S K I L L S
-          </button>
         </div>
-        <div className="">
-          <h2 className="font-bold">USING NOW:</h2>
-        </div>
+        <section className="z-10 flex items-center flex-col px-20 py-7 bg-[#D3D3D3] relative">
+          <div className="flex items-center flex-col gap-10">
+            <button className="border-6 cursor-pointer px-15 font-bold text-2xl py-5">
+              A B O U T &nbsp;&nbsp; M E
+            </button>
+            <h3 className="text-center">
+              Nulla in velit a metus rhoncus tempus. Nulla congue nulla vel sem
+              varius finibus. Sed ornare sit amet lorem <br /> sed viverra. In
+              vel urna quis libero viverra facilisis ut ac est.
+            </h3>
+            <Image src={Sep} alt="This is seperator lines" />
+            <button className="border-6 mt-10 cursor-pointer px-15 font-bold text-2xl py-5">
+              S K I L L S
+            </button>
+          </div>
+          <div className="">
+            <h2 className="font-bold">USING NOW:</h2>
+          </div>
+        </section>
       </section>
     </div>
   );
