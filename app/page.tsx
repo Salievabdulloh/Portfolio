@@ -10,6 +10,15 @@ import Sep from "/public/separator.png";
 import Design from "/public/design.png";
 import Tool from "/public/tool.png";
 import Maintance from "/public/maintance.png";
+import Html from "/public/html.svg";
+import Css from "/public/css.svg";
+import tailwind from "/public/tailwind.svg";
+import Sass from "/public/sass.svg";
+import nodeJs from "/public/nodeJs.svg";
+import Js from "/public/js.svg";
+import React from "/public/react.svg";
+import GitHub from "/public/git.svg";
+import Figma from "/public/figma.svg";
 
 export default function Home() {
   return (
@@ -118,7 +127,7 @@ export default function Home() {
             </h3>
           </div>
         </div>
-        <section className="z-10 flex items-center flex-col px-20 py-7 bg-[#D3D3D3] relative">
+        <div className="">
           <div className="flex items-center flex-col gap-10">
             <button className="border-6 cursor-pointer px-15 font-bold text-2xl py-5">
               A B O U T &nbsp;&nbsp; M E
@@ -131,13 +140,15 @@ export default function Home() {
             <Image src={Sep} alt="This is seperator lines" />
             <button className="border-6 mt-10 cursor-pointer px-15 font-bold text-2xl py-5">
               S K I L L S
-              
             </button>
           </div>
           <div className="">
             <h2 className="font-bold">USING NOW:</h2>
+            <div className="grid-cols-4">
+              <Image src={Html} alt="this is html logo" />
+            </div>
           </div>
-        </section>
+        </div>
       </section>
     </div>
   );
